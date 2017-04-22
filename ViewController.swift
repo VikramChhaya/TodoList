@@ -24,6 +24,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var isEditingMode = false
     
+    var searchActive : Bool = false
+    
+    var data:[String] = []//ToDoItem.mutableArrayValue(forKey: "detail") as! [String]
+    var filtered:[String] = []
     
     override func viewDidLoad() {
         
@@ -172,9 +176,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let dateString = dateFormatter.string(from: date as Date)
-        
+        if(searchActive){
+            cell.textLabel?.text = filtered[indexPath.row]
+        } else {
         cell.textLabel!.text = dateString+"->"+item.detail
-        
+        }
         return cell
     }
     
@@ -185,7 +191,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // [4]
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Int(todoList.count)
+        if(searchActive) {
+            return filtered.count
+        }
+        return Int(todoList.count);
+        //return Int(todoList.count)
     }
     
     @IBAction func addToDo(_ sender: Any) {
@@ -258,6 +268,39 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 */
         return [deleteAction, editAction]
     }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchActive = true;
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        data = todoList.mutableArrayValue(forKey: "detail") as! [String]
+        filtered = data.filter({ (text) -> Bool in
+            let tmp: NSString = text as NSString
+            let range = tmp.range(of: searchText, options: NSString.CompareOptions.caseInsensitive)
+            return range.location != NSNotFound
+        })
+        if(filtered.count == 0){
+            searchActive = false;
+        } else {
+            searchActive = true;
+        }
+        self.tableView.reloadData()
+    }
+
     
   }
 
