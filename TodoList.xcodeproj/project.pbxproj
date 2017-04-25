@@ -17,13 +17,12 @@
 		7F63F8D21EA9B82C0096F0E9 /* timepicker_up_disabled_focused.9.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F63F8D11EA9B82C0096F0E9 /* timepicker_up_disabled_focused.9.png */; };
 		7F63F8DE1EA9BE290096F0E9 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F63F8DD1EA9BE290096F0E9 /* libc++.tbd */; };
 		7F63F8E01EA9BF120096F0E9 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F63F8DF1EA9BF120096F0E9 /* ToDoItem.swift */; };
-		7FA72E6C1EAA3B970011350D /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA72E6A1EAA3B970011350D /* Realm.framework */; };
-		7FA72E6D1EAA3B970011350D /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA72E6B1EAA3B970011350D /* RealmSwift.framework */; };
 		7FA72E6E1EAA3BCA0011350D /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA72E6A1EAA3B970011350D /* Realm.framework */; };
 		7FA72E6F1EAA3BCA0011350D /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA72E6A1EAA3B970011350D /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7FA72E701EAA3BCA0011350D /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA72E6B1EAA3B970011350D /* RealmSwift.framework */; };
 		7FA72E711EAA3BCA0011350D /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA72E6B1EAA3B970011350D /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7FA72E731EAA44470011350D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA72E721EAA44470011350D /* Foundation.framework */; };
+		7FCC536F1EAF7C6F0075C782 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FCC536E1EAF7C6F0075C782 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +56,7 @@
 		7FA72E6A1EAA3B970011350D /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		7FA72E6B1EAA3B970011350D /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		7FA72E721EAA44470011350D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7FCC536E1EAF7C6F0075C782 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +67,7 @@
 				7FA72E731EAA44470011350D /* Foundation.framework in Frameworks */,
 				7FA72E6E1EAA3BCA0011350D /* Realm.framework in Frameworks */,
 				7FA72E701EAA3BCA0011350D /* RealmSwift.framework in Frameworks */,
-				7FA72E6C1EAA3B970011350D /* Realm.framework in Frameworks */,
 				7F63F8DE1EA9BE290096F0E9 /* libc++.tbd in Frameworks */,
-				7FA72E6D1EAA3B970011350D /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +77,7 @@
 		7F63F8B11EA9B1940096F0E9 = {
 			isa = PBXGroup;
 			children = (
+				7FCC536E1EAF7C6F0075C782 /* Default-568h@2x.png */,
 				7F63F8BC1EA9B1940096F0E9 /* TodoList */,
 				7F63F8BB1EA9B1940096F0E9 /* Products */,
 				7F63F8DC1EA9BE290096F0E9 /* Frameworks */,
@@ -149,7 +148,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Chhaya;
 				TargetAttributes = {
 					7F63F8B91EA9B1940096F0E9 = {
@@ -186,6 +185,7 @@
 				7F0C36661EAA6D3C002E8B59 /* add_to_do.png in Resources */,
 				7F63F8D21EA9B82C0096F0E9 /* timepicker_up_disabled_focused.9.png in Resources */,
 				7F63F8C51EA9B1950096F0E9 /* Assets.xcassets in Resources */,
+				7FCC536F1EAF7C6F0075C782 /* Default-568h@2x.png in Resources */,
 				7F63F8C31EA9B1950096F0E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

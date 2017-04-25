@@ -32,7 +32,7 @@
                                     <constraint firstAttribute="width" constant="375" id="nxa-3N-7AY"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="default" indentationWidth="10" id="dXw-GU-GxI" userLabel="Cell" colorLabel="IBBuiltInLabel-Blue">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="dXw-GU-GxI" userLabel="Cell" colorLabel="IBBuiltInLabel-Blue">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dXw-GU-GxI" id="CNy-Cb-k8m">
@@ -72,7 +72,7 @@
                                     <action selector="didClickOnEditButton:" destination="BYZ-38-t0r" id="dol-rN-JuD"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem style="plain" id="Hrs-py-m0n">
+                            <barButtonItem id="Hrs-py-m0n">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="D5R-ge-LLY">
                                     <rect key="frame" x="54" y="4" width="66" height="36"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
