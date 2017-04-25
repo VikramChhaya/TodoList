@@ -23,6 +23,7 @@
 		7FA72E711EAA3BCA0011350D /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA72E6B1EAA3B970011350D /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7FA72E731EAA44470011350D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA72E721EAA44470011350D /* Foundation.framework */; };
 		7FCC536F1EAF7C6F0075C782 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FCC536E1EAF7C6F0075C782 /* Default-568h@2x.png */; };
+		7FCC53711EAF7F6E0075C782 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FCC53701EAF7F6E0075C782 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,7 +50,6 @@
 		7F63F8C21EA9B1950096F0E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F63F8C41EA9B1950096F0E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F63F8C71EA9B1950096F0E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7F63F8C91EA9B1950096F0E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F63F8D11EA9B82C0096F0E9 /* timepicker_up_disabled_focused.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timepicker_up_disabled_focused.9.png; sourceTree = "<group>"; };
 		7F63F8DD1EA9BE290096F0E9 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		7F63F8DF1EA9BF120096F0E9 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
@@ -57,6 +57,7 @@
 		7FA72E6B1EAA3B970011350D /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		7FA72E721EAA44470011350D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7FCC536E1EAF7C6F0075C782 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7FCC53701EAF7F6E0075C782 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +107,7 @@
 				7F63F8C11EA9B1950096F0E9 /* Main.storyboard */,
 				7F63F8C41EA9B1950096F0E9 /* Assets.xcassets */,
 				7F63F8C61EA9B1950096F0E9 /* LaunchScreen.storyboard */,
-				7F63F8C91EA9B1950096F0E9 /* Info.plist */,
+				7FCC53701EAF7F6E0075C782 /* Info.plist */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -180,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCC53711EAF7F6E0075C782 /* Info.plist in Resources */,
 				7F63F8C81EA9B1950096F0E9 /* LaunchScreen.storyboard in Resources */,
 				7F0C36681EAB6927002E8B59 /* magnifying-glass.png in Resources */,
 				7F0C36661EAA6D3C002E8B59 /* add_to_do.png in Resources */,
